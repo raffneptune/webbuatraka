@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2c3e50;
+}
+
+.bio {
+    max-width: 500px;
+}
+
+.bio h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+footer .social-links a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    color: #3498db;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .bio h2 {
+        font-size: 24px;
+    }
+
+    .bio p {
+        font-size: 14px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .bio h2 {
+        font-size: 20px;
+    }
+
+    .bio p {
+        font-size: 12px;
+    }
+
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
